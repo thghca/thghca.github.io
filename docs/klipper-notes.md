@@ -1,0 +1,20 @@
+# Мои заметки по клипперу
+[Бекап моей текущей конфигурации.](https://github.com/thghca/klipper_config)
+## Модули
+### [Klipper-Stable-Z-Home](https://github.com/matthewlloyd/Klipper-Stable-Z-Home)
+
+Модуль позволяет повторять хоуминг оси Z пока положение нуля не стабилизируется.
+Полезно со щупом (bltouch). Можно дождатся пока кровать завершит температурное расширение.
+
+## Программы
+### [klipper-hotkeypad](https://github.com/thghca/klipper-hotkeypad)
+
+Скрипт для использования обычной usb клавиатуры в качестве макропада.
+
+## Фрагменты макросов
+### Лимиты принтера
+```
+{% set X_MAX = printer.toolhead.axis_maximum.x|default(100)|float %}
+{% set Y_MAX = printer.toolhead.axis_maximum.y|default(100)|float %}
+{% set Z_MAX = printer.toolhead.axis_maximum.z|default(100)|float %}
+```

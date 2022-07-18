@@ -1,0 +1,12 @@
+site_name: Hello world!
+site_author: thghca
+
+
+theme:
+  # https://squidfunk.github.io/mkdocs-material/creating-your-site/#configuration
+  name: material
+
+  icon:
+    logo: fontawesome/solid/cat
+
+    
