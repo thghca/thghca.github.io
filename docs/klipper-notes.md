@@ -16,6 +16,17 @@
 
 Скрипт для использования обычной usb клавиатуры в качестве макропада.
 
+## Обновление до python3
+```
+sudo service klipper stop
+sudo service moonraker stop
+mv ~/klippy-env ~/klippy-env-27
+virtualenv -p python3 ~/klippy-env
+~/klippy-env/bin/pip install -r ~/klipper/scripts/klippy-requirements.txt
+sudo service klipper start
+sudo service moonraker start
+```
+
 ## Фрагменты макросов
 
 ### Лимиты принтера
